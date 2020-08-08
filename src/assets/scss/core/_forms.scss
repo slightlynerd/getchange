@@ -1,0 +1,53 @@
+.af-input {
+  display: block;
+
+  .af-input-field {
+    border-right: none;
+  }
+}
+
+.af-input-label {
+  color: $input-label-color;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.af-input-field {
+  background-color: $white;
+  color: $input-color;
+  border: none;
+  border-bottom: 1px solid $grey-2;
+  border-radius: 0;
+  padding-left: 0;
+  font-size: 14px;
+  height: 40px !important;
+}
+
+.af-input-append {
+  background-color: $white;
+  color: $input-color;
+  border: none;
+  border-bottom: 1px solid $grey-2;
+  border-radius: 0;
+  height: 40px;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid lighten($primary-color, 20%) !important;
+}
+
+.custom-select {
+  background-color: $white;
+  width: auto;
+
+  &:focus {
+    box-shadow: none;
+    border-color: $primary-color;
+  }
+}
+
+input[type="checkbox"] { /* change "blue" browser chrome to yellow */
+  filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+}

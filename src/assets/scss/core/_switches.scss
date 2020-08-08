@@ -1,0 +1,22 @@
+.vue-switcher-theme--custom {
+  &.vue-switcher-color--primary {
+    div {
+      background-color: lighten(#F38D04, 10%);
+
+      &:after {
+        // for the circle on the switch 
+        background-color: darken(#F38D04, 5%);
+      }
+    }
+
+    &.vue-switcher--unchecked {
+      div {
+        background-color: darken(#757575, 30%);
+
+        &:after {
+          background-color: darken(#757575, 10%);
+        }
+      }
+    }
+  }
+}

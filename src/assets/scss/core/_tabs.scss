@@ -1,0 +1,13 @@
+ul.nav {
+  border: none;
+
+  li.nav-item > a.nav-link {
+    color: #868686;
+
+    &.active {
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #F38D04;
+    }
+  }
+}

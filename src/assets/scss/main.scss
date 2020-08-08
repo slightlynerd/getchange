@@ -1,0 +1,61 @@
+@import './core/variables';
+@import './core/text';
+@import './core/forms';
+@import './core/buttons';
+@import './core/cards';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #013C61;
+}
+
+body.light {
+  background-color: #fafafa;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+*:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.curved-edge {
+  border-radius: 5px;
+}
+.curved-edge-2x {
+  border-radius: 10px;
+}
+
+.emphasize {
+  color: $primary-color;
+
+  a {
+    color: inherit;
+  }
+}
+
+.af-modal {
+  border-radius: 20px;
+  padding: 20px 15px;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.page-item.active .page-link {
+  border-color: $primary-color;
+  background-color: $primary-color;
+  color: #fff;
+}
